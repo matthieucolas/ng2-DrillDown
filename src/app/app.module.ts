@@ -4,12 +4,12 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { Ng2DrillDownComponent } from './ng2-drilldown/ng2-drilldown.component';
+import { DrillDownComponent } from './drilldown/drilldown.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    Ng2DrillDownComponent
+    DrillDownComponent
   ],
   imports: [
     BrowserModule,

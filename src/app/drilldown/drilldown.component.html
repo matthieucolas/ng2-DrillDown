@@ -1,0 +1,27 @@
+<div class="drilldown">
+
+  <div class="drilldown-header">
+
+    <button class="drilldown-back-button"
+            *ngIf="currentNode.parentNode"
+            (click)="loadParentNode(currentNode.parentNode)">
+      <i class="fa fa-arrow-left"></i>
+    </button>
+
+    <div class="drilldown-breadcrumb">
+      <span class="drilldown-breadcrumb__item"
+            *ngFor="let node of breadcrumb">
+        {{node.name}}
+      </span>
+    </div>
+
+  </div>
+  <div class="drilldown-node"
+       [ngClass]="{'drilldown-node_has-children' : node.children.length > 0}"
+       *ngFor="let node of currentNode.children"
+       (click)="loadChildNode(node)">
+    <span class="drilldown-node__name">{{node.name}}</span>
+
+    <span class="drilldown-node__caret">  <i class="fa fa-arrow-right"></i> </span>
+  </div>
+</div>

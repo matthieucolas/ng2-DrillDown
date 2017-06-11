@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+  title = 'Drilldown Component';
 
   nodes = [
     {
@@ -45,7 +45,7 @@ export class AppComponent {
                 {
                   name:"node 1 - 2 - 3 - 5",
                   children:[]
-                },
+                }
               ]
             },
             {
@@ -70,7 +70,7 @@ export class AppComponent {
                 {
                   name:"node 1 - 2 - 4 - 5",
                   children:[]
-                },
+                }
               ]
             },
             {
@@ -89,7 +89,52 @@ export class AppComponent {
                     },
                     {
                       name:"node 1 - 2 - 5 - 2 - 2",
-                      children:[]
+                      children:[
+                        {
+                          name:"node 1 - 2 - 5 - 2 - 2 - 1",
+                          children:[]
+                        },
+                        {
+                          name:"node 1 - 2 - 5 - 2 - 2 - 2",
+                          children:[]
+                        },
+                        {
+                          name:"node 1 - 2 - 5 - 2 - 2 - 3",
+                          children:[]
+                        },
+                        {
+                          name:"node 1 - 2 - 5 - 2 - 2 - 4",
+                          children:[]
+                        },
+                        {
+                          name:"node 1 - 2 - 5 - 2 - 2 - 5",
+                          children:[]
+                        },
+                        {
+                          name:"node 1 - 2 - 5 - 2 - 2 - 5",
+                          children:[]
+                        },
+                        {
+                          name:"node 1 - 2 - 5 - 2 - 2 - 5",
+                          children:[]
+                        },
+                        {
+                          name:"node 1 - 2 - 5 - 2 - 2 - 5",
+                          children:[]
+                        },
+                        {
+                          name:"node 1 - 2 - 5 - 2 - 2 - 5",
+                          children:[]
+                        },
+                        {
+                          name:"node 1 - 2 - 5 - 2 - 2 - 5",
+                          children:[]
+                        },
+                        {
+                          name:"node 1 - 2 - 5 - 2 - 2 - 5",
+                          children:[]
+                        }
+                      ]
                     },
                     {
                       name:"node 1 - 2 - 5 - 2 - 3",
@@ -102,7 +147,7 @@ export class AppComponent {
                     {
                       name:"node 1 - 2 - 5 - 2 - 5",
                       children:[]
-                    },
+                    }
                   ]
                 },
                 {
